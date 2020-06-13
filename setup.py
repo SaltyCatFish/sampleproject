@@ -38,7 +38,7 @@ setup(
     # For a discussion on single-sourcing the version across setup.py and the
     # project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='1.3.1',  # Required
+    version='0.0.1',  # Required
 
     # This is a one-line description or tagline of what your project does. This
     # corresponds to the "Summary" metadata field:
@@ -75,11 +75,11 @@ setup(
 
     # This should be your name or the name of the organization which owns the
     # project.
-    author='A. Random Developer',  # Optional
+    author='Ryan Long',  # Optional
 
     # This should be a valid email address corresponding to the author listed
     # above.
-    author_email='author@example.com',  # Optional
+    author_email='ryan@redbit.tech',  # Optional
 
     # Classifiers help users find your project by categorizing it.
     #
@@ -92,8 +92,8 @@ setup(
         'Development Status :: 3 - Alpha',
 
         # Indicate who your project is intended for
-        'Intended Audience :: Developers',
-        'Topic :: Software Development :: Build Tools',
+        # 'Intended Audience :: Developers',
+        # 'Topic :: Software Development :: Build Tools',
 
         # Pick your license as you wish
         'License :: OSI Approved :: MIT License',
@@ -101,12 +101,12 @@ setup(
         # Specify the Python versions you support here. In particular, ensure
         # that you indicate you support Python 3. These classifiers are *not*
         # checked by 'pip install'. See instead 'python_requires' below.
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.5',
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3.8',
-        'Programming Language :: Python :: 3 :: Only',
+        # 'Programming Language :: Python :: 3',
+        # 'Programming Language :: Python :: 3.5',
+        # 'Programming Language :: Python :: 3.6',
+        # 'Programming Language :: Python :: 3.7',
+        # 'Programming Language :: Python :: 3.8',
+        # 'Programming Language :: Python :: 3 :: Only',
     ],
 
     # This field adds keywords for your project which will appear on the
@@ -142,7 +142,7 @@ setup(
     #
     # For an analysis of "install_requires" vs pip's requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
-    install_requires=['peppercorn'],  # Optional
+    install_requires=[],  # Optional
 
     # List additional groups of dependencies here (e.g. development
     # dependencies). Users will be able to install these using the "extras"
@@ -153,8 +153,8 @@ setup(
     # Similar to `install_requires` above, these must be valid existing
     # projects.
     extras_require={  # Optional
-        'dev': ['check-manifest'],
-        'test': ['coverage'],
+        'dev': ['check-manifest', 'black'],
+        'test': ['pytest', 'pytest-cov'],
     },
 
     # If there are data files included in your packages that need to be
@@ -193,9 +193,8 @@ setup(
     # maintainers, and where to support the project financially. The key is
     # what's used to render the link text on PyPI.
     project_urls={  # Optional
-        'Bug Reports': 'https://github.com/pypa/sampleproject/issues',
+        'Bug Reports': 'https://github.com/saltycatfish/sampleproject/issues',
         'Funding': 'https://donate.pypi.org',
-        'Say Thanks!': 'http://saythanks.io/to/example',
-        'Source': 'https://github.com/pypa/sampleproject/',
+        'Source': 'https://github.com/saltycatfish/sampleproject/',
     },
 )
